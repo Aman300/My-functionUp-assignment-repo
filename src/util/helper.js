@@ -2,13 +2,13 @@
 
 let printDate = function(){
     let today = new Date().toLocaleDateString()
-    console.log(today)
+    console.log('current date function : ' + today)
 }
 
 let printMonth = function(){
     let today = new Date();
-    let date = today.getMonth()+1;
-    console.log(date);
+    let months = today.getMonth()+1;
+    console.log('currnet months function : ' + months);
 }
 
 let getBatchInfo = function(){
