@@ -78,8 +78,8 @@ const bookList = async function (req, res) {
     //normally this is an asynchronous call..but await makes it synchronous
 const getBooksInYear = async function (req, res) {
 
-    let years = req.query.year
-    // let years = req.body
+    //let years = req.query.year
+     let years = req.body
     let getbooksinyear= await BookModel.find({ year: { $eq: years }  })
     res.send({msg: getbooksinyear})
 }
